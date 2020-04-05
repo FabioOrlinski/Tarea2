@@ -70,4 +70,10 @@ public class Usuario {
 		this.setCantHijos(unaCantHijos);
 		this.setSaldo(unSaldo);
 	}
+	//Equals
+	
+	@Override
+    public boolean equals(Object o) {
+        return this.getCedula().equals(((Usuario)o).getCedula());
+    }
 }
