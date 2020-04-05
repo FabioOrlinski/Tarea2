@@ -26,4 +26,7 @@ public class FuncionesUsuario {
 		}
 		return impuestos;
 	}
+	public void cobroDeSueldo(int servicios, Usuario unUsuario){
+		unUsuario.setSaldo(unUsuario.getSaldo()+servicios);
+	}
 }
